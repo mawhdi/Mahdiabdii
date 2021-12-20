@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name=" Mahdi Abdi" content=" Mahdi Abdi">
+  </head>
+  <body style="background-color: antiquewhite;">
+    <h1 style="color: coral; font-family: 'Courier New', Courier, monospace;">Week Days</h1>
+    <h3 style="color: blueviolet; font-family: 'Courier New', Courier, monospace;" id="demo"></h3>
+    <script>
+      let day;
+      switch(new Date().getDay()){
+        case 0:
+        day="Sunday <p>Bird of a feather flock together</p>";
+        break;
+        case 1:
+        day="Monday <p>No Pain No gain</p>";
+        break;
+        case 2:
+        day="Tuesday <p>A friend in need is a friend indeed</p>";
+        break;
+        case 3:
+        day="Wednesday <p>A friend who shares is a friend who cares</p>";
+        break;
+        case 4:
+        day="Thursday <p>In unity there is strenght</p>";
+        break;
+        case 5:
+        day="Friday <p>There is no place like home</p>";
+        break;
+        case 6:
+        day="Saturday <p>An apple a day keeps the doctor away</p>";
+        break;
+      }
+      document.getElementById("demo").innerHTML="Today is " + day;
+    </script>
+  </body>
+</html>
